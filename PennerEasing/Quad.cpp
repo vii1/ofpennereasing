@@ -1,5 +1,8 @@
 #include "Quad.h"
 
+namespace PennerEasing
+{
+
 float Quad::easeIn (float t,float b , float c, float d) {
 	return c*(t/=d)*t + b;
 }
@@ -19,3 +22,5 @@ float Quad::easeInOut(float t,float b , float c, float d) {
 	*/
 	
 }
+
+} // namespace PennerEasing

@@ -1,5 +1,8 @@
 #include "Expo.h"
 
+namespace PennerEasing
+{
+
 float Expo::easeIn (float t,float b , float c, float d) {
 	return (t==0) ? b : c * pow(2, 10 * (t/d - 1)) + b;
 }
@@ -13,3 +16,5 @@ float Expo::easeInOut(float t,float b , float c, float d) {
 	if ((t/=d/2) < 1) return c/2 * pow(2, 10 * (t - 1)) + b;
 	return c/2 * (-pow(2, -10 * --t) + 2) + b;
 }
+
+} // namespace PennerEasing

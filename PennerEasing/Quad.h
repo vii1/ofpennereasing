@@ -1,6 +1,9 @@
 #ifndef _PENNER_QUAD
 #define _PENNER_QUAD
 
+namespace PennerEasing
+{
+
 class Quad {
 	
 	public:
@@ -9,5 +12,7 @@ class Quad {
 		static float easeOut(float t,float b , float c, float d);
 		static float easeInOut(float t,float b , float c, float d);
 };
+
+} // namespace PennerEasing
 
 #endif

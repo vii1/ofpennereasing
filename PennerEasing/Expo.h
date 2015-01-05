@@ -3,6 +3,9 @@
 
 #include <math.h>
 
+namespace PennerEasing
+{
+
 class Expo {
 	
 	public:
@@ -11,5 +14,7 @@ class Expo {
 		static float easeOut(float t,float b , float c, float d);
 		static float easeInOut(float t,float b , float c, float d);
 };
+
+} // namespace PennerEasing
 
 #endif

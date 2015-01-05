@@ -1,5 +1,8 @@
 #include "Linear.h"
 
+namespace PennerEasing
+{
+
 float Linear::easeNone (float t,float b , float c, float d) {
 	return c*t/d + b;
 }
@@ -13,3 +16,5 @@ float Linear::easeOut(float t,float b , float c, float d) {
 float Linear::easeInOut(float t,float b , float c, float d) {
 	return c*t/d + b;
 }
+
+} // namespace PennerEasing

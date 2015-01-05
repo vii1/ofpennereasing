@@ -2,6 +2,9 @@
 #define _PENNER_LINEAR
 
 
+namespace PennerEasing
+{
+
 class Linear {
 	
 	public:
@@ -12,5 +15,7 @@ class Linear {
 		static float easeInOut(float t,float b , float c, float d);
 		
 };
+
+} // namespace PennerEasing
 
 #endif

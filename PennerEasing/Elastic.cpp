@@ -1,5 +1,8 @@
 #include "Elastic.h"
 
+namespace PennerEasing
+{
+
 float Elastic::easeIn (float t,float b , float c, float d) {
 	if (t==0) return b;  if ((t/=d)==1) return b+c;  
 	float p=d*.3f;
@@ -30,3 +33,5 @@ float Elastic::easeInOut(float t,float b , float c, float d) {
 	float postFix =  a*pow(2,-10*(t-=1)); // postIncrement is evil
 	return postFix * sin( (t*d-s)*(2*PI)/p )*.5f + c + b;
 }
+
+} // namespace PennerEasing

@@ -7,6 +7,9 @@
 #define PI  3.14159265
 #endif
 
+namespace PennerEasing
+{
+
 class Elastic {
 	
 	public:
@@ -15,5 +18,7 @@ class Elastic {
 		static float easeOut(float t,float b , float c, float d);
 		static float easeInOut(float t,float b , float c, float d);
 };
+
+} // namespace PennerEasing
 
 #endif

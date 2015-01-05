@@ -3,6 +3,9 @@
 
 #include <math.h>
 
+namespace PennerEasing
+{
+
 class Circ {
 	
 	public:
@@ -11,5 +14,7 @@ class Circ {
 		static float easeOut(float t,float b , float c, float d);
 		static float easeInOut(float t,float b , float c, float d);
 };
+
+} // namespace PennerEasing
 
 #endif
